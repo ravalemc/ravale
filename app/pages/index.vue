@@ -136,7 +136,7 @@ onMounted(async () => {
           <div class="group relative bg-white rounded-3xl overflow-hidden border border-slate-100 hover:border-[#FB325A]/30 transition-all duration-500 shadow-2xl shadow-slate-200/50 hover:shadow-[#FB325A]/10 h-[400px]">
             <div class="absolute inset-0 h-full w-full overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent z-10"></div>
-              <NuxtImg  src="/prison.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Prison" />
+              <NuxtImg src="/prison.png" loading="eager" fetchpriority="high" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Prison" />
             </div>
 
             <div class="relative z-20 p-8 h-full flex flex-col justify-end select-none">
@@ -153,7 +153,7 @@ onMounted(async () => {
           <div class="group relative bg-white rounded-3xl overflow-hidden border border-slate-100 hover:border-amber-400/50 transition-all duration-500 shadow-2xl shadow-slate-200/50 hover:shadow-amber-500/10 h-[400px] select-none">
             <div class="absolute inset-0 h-full w-full overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent z-10"></div>
-              <NuxtImg  src="/skyblock.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale-[0.5] group-hover:grayscale-0" alt="Skyblock" />
+              <NuxtImg  src="/skyblock.jpg" loading="eager" fetchpriority="high" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale-[0.5] group-hover:grayscale-0" alt="Skyblock" />
             </div>
 
             <div class="relative z-20 p-8 h-full flex flex-col justify-end">
@@ -219,7 +219,7 @@ onMounted(async () => {
             <div class="flex flex-col md:flex-row gap-10 items-center md:items-start">
               <div class="relative group flex-shrink-0">
                 <div class="w-40 h-40 rounded-3xl bg-slate-50 border-2 border-slate-100 flex items-center justify-center overflow-hidden shadow-lg">
-                  <NuxtImg :src="`https://api.mineatar.io/body/full/${searchedPlayer.uuid}?scale=16`" class="h-[90%] object-contain drop-shadow-xl" alt="Player Skin" />
+                  <NuxtImg :src="`https://api.mineatar.io/body/full/${searchedPlayer.uuid}?scale=16`" loading="eager" fetchpriority="high" class="h-[90%] object-contain drop-shadow-xl" alt="Player Skin" />
                 </div>
                 <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full text-xs font-black bg-slate-800 text-white border-2 border-white shadow-lg whitespace-nowrap uppercase tracking-wider">
                   Rank {{ searchedPlayer.rank }}
@@ -338,7 +338,7 @@ onMounted(async () => {
 
               <div class="col-span-5 md:col-span-4 flex items-center md:gap-4 gap-2">
                 <div class="md:w-10 md:h-10 w-6 h-6 md:rounded-xl rounded-md bg-slate-200 overflow-hidden ring-2 ring-transparent group-hover:ring-[#FB325A]/20 transition-all">
-                  <NuxtImg :src="`https://api.mineatar.io/face/${player.uuid}?scale=32`" class="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300" alt="face" />
+                  <NuxtImg :src="`https://api.mineatar.io/face/${player.uuid}?scale=32`" loading="eager" fetchpriority="high" class="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300" alt="face" />
                 </div>
                 <span class="font-bold text-slate-700 group-hover:text-slate-900 transition-colors">{{ player.name }}</span>
               </div>

@@ -8,7 +8,24 @@ export default defineNuxtConfig({
   },
 
   css: ['assets/main.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@nuxtjs/google-fonts'
+  ],
+
+  googleFonts: {
+    families: {
+      Inter: [400, 600, 800]
+    },
+    display: 'swap',
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    download: true,
+    base64: false,
+  },
 
   app: {
     head: {
@@ -17,9 +34,6 @@ export default defineNuxtConfig({
         { name: 'description', content: 'The ultimate Skyblock and Prison experience.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
-      link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap' }
-      ]
     }
   },
 })
