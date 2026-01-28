@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   },
 
   css: ['assets/main.css'],
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
 
   app: {
     head: {
