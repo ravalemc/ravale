@@ -190,7 +190,7 @@ onMounted(async () => {
                 @keyup.enter="handleSearch"
                 type="text"
                 placeholder="Search Username..."
-                class="w-full bg-white border-2 border-slate-100 text-slate-800 px-4 py-3 rounded-2xl pl-11 focus:border-[#FB325A] focus:ring-4 focus:ring-[#FB325A]/10 focus:outline-none transition-all placeholder:text-slate-400 shadow-sm"
+                class="w-full bg-white border-2 border-slate-100 text-slate-800 px-4 py-3 rounded-2xl pl-11 focus:border-[#FB325A] focus:ring-4 focus:ring-[#FB325A]/10 outline-none ring-0 ring-transparent transition-all placeholder:text-slate-400 shadow-sm"
             />
             <Search class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-[#FB325A] transition-colors" :size="20" />
           </div>
@@ -337,10 +337,10 @@ onMounted(async () => {
               </div>
 
               <div class="col-span-5 md:col-span-4 flex items-center md:gap-4 gap-2">
-                <div class="md:w-10 md:h-10 w-6 h-6 md:rounded-xl rounded-md bg-slate-200 overflow-hidden ring-2 ring-transparent group-hover:ring-[#FB325A]/20 transition-all">
+                <div class="md:w-8 md:h-8 w-6 h-6 md:rounded-lg rounded-md bg-slate-200 overflow-hidden ring-2 ring-transparent group-hover:ring-[#FB325A]/20 transition-all flex-shrink-0">
                   <NuxtImg :src="`https://api.mineatar.io/face/${player.uuid}?scale=32`" loading="eager" fetchpriority="high" class="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300" alt="face" />
                 </div>
-                <span class="font-bold text-slate-700 group-hover:text-slate-900 transition-colors">{{ player.name }}</span>
+                <span class="font-bold text-slate-700 group-hover:text-slate-900 transition-colors md:text-base text-sm">{{ player.name }}</span>
               </div>
 
               <div class="col-span-3 text-right md:text-left font-mono font-medium text-slate-500">{{ player.prestige }}</div>
@@ -354,6 +354,5 @@ onMounted(async () => {
         </div>
       </div>
     </section>
-
   </main>
 </template>
