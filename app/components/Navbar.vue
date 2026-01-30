@@ -1,6 +1,6 @@
 Navbar.vue
 <script setup lang="ts">
-import { ShoppingCart } from 'lucide-vue-next'
+import { ShoppingBasket } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -23,7 +23,7 @@ import { ShoppingCart } from 'lucide-vue-next'
       </div>
 
       <a href="https://store.ravale.net" target="_blank" class="flex items-center gap-2.5 bg-[#FB325A] text-white pl-4 pr-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#d92b4d] transition-all duration-300 shadow-lg shadow-[#FB325A]/25 hover:shadow-xl hover:shadow-[#FB325A]/40 transform hover:-translate-y-0.5 group">
-        <ShoppingCart :size="18" :stroke-width="2.5" class="group-hover:-rotate-12 transition-transform duration-300" />
+        <ShoppingBasket :size="18" :stroke-width="2.5" class="group-hover:-rotate-12 transition-transform duration-300" />
         <span class="tracking-wide">STORE</span>
       </a>
     </div>

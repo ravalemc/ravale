@@ -94,7 +94,7 @@ onMounted(async () => {
           The next generation of Minecraft network. Immerse yourself in our custom engineered Skyblock and Prison realms.
         </p>
 
-        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+        <div class="flex flex-row items-center justify-center gap-4 w-128">
           <button
               @click="copyIp"
               class="group relative h-14 pl-6 pr-2 flex items-center bg-white border-2 border-slate-100 rounded-2xl overflow-hidden hover:border-[#FB325A] transition-all duration-300 w-full md:w-auto justify-between md:justify-start shadow-xl shadow-slate-200/50 hover:shadow-[#FB325A]/10"
@@ -143,7 +143,7 @@ onMounted(async () => {
               <div class="mb-3 inline-flex px-3 py-1 rounded-full bg-[#FB325A] text-white text-xs font-bold uppercase tracking-wider w-fit shadow-lg shadow-[#FB325A]/20">
                 LAUNCHED
               </div>
-              <h3 class="text-4xl font-black text-white mb-2 drop-shadow-md">OP Prison</h3>
+              <h3 class="text-4xl font-black text-white mb-2 drop-shadow-md">Prison</h3>
               <p class="text-slate-200 font-medium leading-relaxed max-w-md drop-shadow-sm">
                 Mine your way to the top in our custom economy. Featuring auto-miners, gangs, and explosive enchants.
               </p>
