@@ -1,4 +1,7 @@
 app.vue
+<script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
+</script>
 <template>
   <div class="min-h-screen bg-slate-50 text-slate-800 selection:bg-[#FB325A]/20 selection:text-[#FB325A] relative font-sans">
     <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
@@ -9,5 +12,6 @@ app.vue
     <Navbar />
     <NuxtPage />
     <Footer />
+    <Analytics/>
   </div>
 </template>
